@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quiz App</title>
+</head>
+<body>
+   <div class="quiz-container">
+       <h2>Simple Quiz</h2>
+       <ul class="quiz">
+           <li>
+               <h4>Who was in Ferrari??</h4>
+               <ul class="choices">
+                   <li><label><input type="radio" name="question0" value="A"> Michael Shumacher</label></li>
+                   <li><label><input type="radio" name="question0" value="B"> Lewis Hamilton</label></li>
+                   <li><label><input type="radio" name="question0" value="C"> Aryton Senna</label></li>
+               </ul>
+           </li>
+           <li>
+             <h4>Identify The monument</h4>
+               <ul class="choices">
+               <img src="https://static.wixstatic.com/media/9b64ce_43f42ca5d4c949afba5c942ef6a870ca~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_90,usm_0.66_1.00_0.01/9b64ce_43f42ca5d4c949afba5c942ef6a870ca~mv2.jpg" height="300" width="300">
+                   <li><label><input type="radio" name="question2" value="A"> Eiffel Tower</label></li>
+                   <li><label><input type="radio" name="question2" value="B"> Buddha Point Bhutan</label></li>
+                   <li><label><input type="radio" name="question2" value="C">Statue Of Unity</label></li>
+               </ul>
+           </li>
+       </ul>
+  <h4>Identify The person</h4>
+               <ul class="choices">
+               <img src="https://sportsbase.io/images/gpfans/copy_1200x800/808ea17290191fac7e29bde9197834aa07681452.jpg" height="300" width="300">
+                   <li><label><input type="radio" name="question3" value="A"> Charles Leclerc</label></li>
+                   <li><label><input type="radio" name="question3" value="B"> Lance Stroll</label></li>
+                   <li><label><input type="radio" name="question3" value="C">Lewis Hamilton</label></li>
+               </ul>
+           </li>
+       </ul>
+
+
+
+       <button onclick="calculateScore()">Submit</button>
+       <p id="result"></p>
+   </div>
+</body>
+<script src="script.js"></script>
+</html>
