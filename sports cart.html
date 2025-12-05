@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Shopping cart</title>
+</head>
+<body>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: aliceblue;
+}
+h1 {
+    color: blue;
+}
+.item {
+    background-color: #ffa07a;
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+.cart {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #aaf0d1;
+    display: inline-block;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+    <h1>Welcome to the Shop!</h1>
+    <p>Click the button to add an item to the cart.</p>
+       <div class="item">
+        <p><img src="https://th.bing.com/th/id/R.b75917828132a60c623d12b670206663?rik=nnhDeedpDMKrQA&riu=http%3a%2f%2fstatic.guim.co.uk%2fsys-images%2fGuardian%2fPix%2fpictures%2f2013%2f4%2f22%2f1366634633369%2fFootball-010.jpg&ehk=7Lpnpp6LJGkIONScAcT22sxjqP%2bAoPuMBMsKuR6MjYo%3d&risl=&pid=ImgRaw&r=0" height="300" width="300">FootBall⚽</p>
+        <p>Coaches: Mukesh Ambani & Bihari Watchman</p>
+        <button onclick="addToCart('FootBall Coaching')">Add to Cart</button>
+    </div>
+<div class="item">
+        <p><img src="https://img.olympics.com/images/image/private/t_social_share_thumb/f_auto/primary/momhllweruehw0ud2m2r" height="300" width="300"> Table Tennis🏓</p>
+        <p>Coaches: Gautam Adani & Ghoda Gyattniwal</p>
+        <button onclick="addToCart('Table Tennis Coaching')">Add to Cart</button>
+    </div>
+<div class="item">
+<p> <img src="https://images.volleyballworld.com/image/private/t_q-best/v1662326185/fivb-prd/byvnwywraz4mhwnjybuh.jpg" height="300" width="300">VolleyBall🏐</p>
+ <p>Coaches: Mr.Langot & Ding Ding Dong</p>
+        <button onclick="addToCart('VolleyBall Coaching')">Add to Cart</button>
+    </div>
+    <div class="cart">
+        <h3>Shopping Cart</h3>
+        <p id="cartList">Cart is empty</p>
+    </div>
+    <script>
+        let totalAmount = 0;
+
+        function addToCart(item, price) {
+            let cart = document.getElementById("cartList");
+            let total = document.getElementById("totalAmount");
+
+            // Update cart items
+            if (cart.innerHTML === "Cart is empty") {
+                cart.innerHTML = item;
+            } else {
+                cart.innerHTML += ", " + item;
+            }
+
+            // Update total amount
+            totalAmount += price;
+            total.innerHTML = totalAmount;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
